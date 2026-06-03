@@ -3,6 +3,11 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
 	"scripts": {
 		"dev": "turbo dev",
 		"build": "turbo build",
@@ -11,10 +16,11 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
+	"packageManager": "npm@10.9.2",
 	"devEngines": {
 		"packageManager": {
-			"name": "pnpm",
-			"version": "^11.5.0",
+			"name": "npm",
+			"version": ">=10.0.0",
 			"onFail": "download"
 		}
 	},
